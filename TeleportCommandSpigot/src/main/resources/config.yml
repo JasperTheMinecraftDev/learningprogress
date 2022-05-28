@@ -5,4 +5,4 @@ location:
 
 messages:
   teleporting: You are now teleporting to the location!
-  teleported: You successfully teleported to the location!
+  teleported: You successfully teleported to {cords}!
