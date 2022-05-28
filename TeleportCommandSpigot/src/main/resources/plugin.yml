@@ -1,0 +1,7 @@
+name: Teleportcommand
+version: '${project.version}'
+main: ga.juriantech.teleportcommand.Teleportcommand
+api-version: 1.18
+authors: [ Jurian ]
+description: A simple plugin which has a command to teleport to a given location in the config.
+website: juriantech.ga
