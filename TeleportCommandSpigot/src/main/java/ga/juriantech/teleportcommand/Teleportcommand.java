@@ -23,8 +23,6 @@ public final class Teleportcommand extends JavaPlugin {
         commands();
         config();
         logger.warning("The plugin has been started!");
-
-
     }
 
     private void config() {
