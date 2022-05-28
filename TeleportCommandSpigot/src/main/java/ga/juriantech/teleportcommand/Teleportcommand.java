@@ -12,8 +12,7 @@ import java.util.logging.Logger;
 public final class Teleportcommand extends JavaPlugin {
 
     public Logger logger = Bukkit.getLogger();
-    Plugin plugin;
-    Teleportcommand teleportcommand;
+    Teleportcommand plugin;
     private static Teleportcommand instance;
 
     @Override
@@ -30,7 +29,7 @@ public final class Teleportcommand extends JavaPlugin {
     }
 
     private void commands() {
-        BukkitCommandManager manager = new BukkitCommandManager(teleportcommand);
+        BukkitCommandManager manager = new BukkitCommandManager(plugin);
         manager.registerCommand(new TeleportLoc());
     }
 
