@@ -1,5 +1,5 @@
 name: Teleportcommand
-version: '${project.version}'
+version: 1.0
 main: ga.juriantech.teleportcommand.Teleportcommand
 api-version: 1.18
 authors: [ Jurian ]
