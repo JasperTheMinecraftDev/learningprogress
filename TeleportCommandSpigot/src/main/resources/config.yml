@@ -4,5 +4,5 @@ location:
   z:
 
 messages:
-  teleporting: You are now teleporting to the location!
-  teleported: You successfully teleported to {cords}!
+  teleporting: &eYou are now teleporting to the location!
+  teleported: &aYou successfully teleported to {cords}!
