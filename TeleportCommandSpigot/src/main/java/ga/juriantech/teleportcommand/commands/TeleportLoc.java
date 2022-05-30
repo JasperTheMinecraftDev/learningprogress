@@ -2,6 +2,7 @@ package ga.juriantech.teleportcommand.commands;
 
 import co.aikar.commands.BaseCommand;
 import co.aikar.commands.annotation.CommandAlias;
+import co.aikar.commands.annotation.CommandCompletion;
 import ga.juriantech.teleportcommand.Teleportcommand;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
@@ -11,6 +12,7 @@ public class TeleportLoc extends BaseCommand {
     Teleportcommand plugin;
 
     @CommandAlias("teleportloc")
+    @CommandCompletion("teleportloc")
 
 
     public void Teleport(Player player) {
