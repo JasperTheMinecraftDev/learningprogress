@@ -19,7 +19,6 @@ public class TeleportLoc extends BaseCommand {
             player.sendMessage(ChatColor.YELLOW + plugin.getConfig().getString("messages.teleporting"));
             Location location = new Location(player.getWorld(), plugin.getConfig().getInt("location.x"), plugin.getConfig().getInt("location.y"), plugin.getConfig().getInt("location.z"));
             player.teleport(location);
-            // TODO, add a check if it succeeded.
             player.sendMessage(ChatColor.GREEN + plugin.getConfig().getString("messages.teleported").replace("{cords}", (CharSequence) player.getLocation()));
 
         }
