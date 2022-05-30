@@ -15,7 +15,7 @@ public class TeleportLoc extends BaseCommand {
     @CommandCompletion("teleportloc")
 
 
-    public void Teleport(Player player) {
+    public void teleport(Player player) {
         if (player instanceof Player) {
             this.plugin = Teleportcommand.getInstance();
             player.sendMessage(ChatColor.YELLOW + plugin.getConfig().getString("messages.teleporting"));
