@@ -21,7 +21,7 @@ public final class Teleportcommand extends JavaPlugin {
         instance = this;
         commands();
         config();
-        logger.warning("The plugin has been started!");
+        logger.warning("TeleportCommand has been started!");
     }
 
     private void config() {
@@ -36,7 +36,7 @@ public final class Teleportcommand extends JavaPlugin {
     @Override
     public void onDisable() {
         // Plugin shutdown logic
-        logger.warning("The plugin successfully stopped!");
+        logger.warning("TeleportCommand successfully stopped!");
     }
     public static Teleportcommand getInstance() {
         return instance;
