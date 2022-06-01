@@ -53,5 +53,6 @@ public class GameMode extends BaseCommand {
     public void checkperm (Player player) {
         if (!player.hasPermission("gamemodes.use"))
             player.sendMessage(ChatUtils.colorize(plugin.getConfig().getString("messages.no-permission")));
+        return;
     }
 }
