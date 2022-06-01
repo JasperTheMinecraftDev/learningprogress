@@ -14,3 +14,8 @@ It supports 4 gamemodes on this moment, creative, survival, spectator and advent
 
 Example usage: /gamemodes creative.
 As always, everything is customizable and changeable, feel free to take a look at the src!
+
+Permissions: gamemodes.use to use the /gamemodes commands.
+
+Do you want something to be added?
+Say it!
