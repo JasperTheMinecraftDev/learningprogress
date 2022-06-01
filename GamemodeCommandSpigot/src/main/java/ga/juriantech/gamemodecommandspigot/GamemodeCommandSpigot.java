@@ -1,7 +1,6 @@
 package ga.juriantech.gamemodecommandspigot;
 
 import co.aikar.commands.BukkitCommandManager;
-import com.google.common.collect.ImmutableList;
 import ga.juriantech.gamemodecommandspigot.commands.GameMode;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
