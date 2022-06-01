@@ -1,10 +1,7 @@
 package ga.juriantech.gamemodecommandspigot.commands;
 
 import co.aikar.commands.BaseCommand;
-import co.aikar.commands.annotation.CommandAlias;
-import co.aikar.commands.annotation.CommandCompletion;
-import co.aikar.commands.annotation.Default;
-import co.aikar.commands.annotation.Subcommand;
+import co.aikar.commands.annotation.*;
 import ga.juriantech.gamemodecommandspigot.GamemodeCommandSpigot;
 import ga.juriantech.gamemodecommandspigot.Utils.ChatUtils;
 import org.bukkit.entity.Player;
@@ -16,17 +13,17 @@ public class GameMode extends BaseCommand {
 
     @Subcommand("creative")
     @CommandCompletion("creative")
+    @CommandPermission("gamemodes.use")
     public void creative(Player player) {
         this.plugin = GamemodeCommandSpigot.getInstance();
-        checkperm(player);
         player.setGameMode(org.bukkit.GameMode.CREATIVE);
         player.sendMessage(ChatUtils.colorize(plugin.getConfig().getString("messages.gamemode-changed").replace("{gamemode}", "Creative")));
     }
 
     @Subcommand("survival")
     @CommandCompletion("survival")
+    @CommandPermission("gamemodes.use")
     public void survival(Player player) {
-        checkperm(player);
         player.setGameMode(org.bukkit.GameMode.SURVIVAL);
         player.sendMessage(ChatUtils.colorize(plugin.getConfig().getString("messages.gamemode-changed").replace("{gamemode}", "Survival")));
 
@@ -34,8 +31,8 @@ public class GameMode extends BaseCommand {
 
     @Subcommand("spectator")
     @CommandCompletion("spectator")
+    @CommandPermission("gamemodes.use")
     public void spectator(Player player) {
-        checkperm(player);
         player.setGameMode(org.bukkit.GameMode.SPECTATOR);
         player.sendMessage(ChatUtils.colorize(plugin.getConfig().getString("messages.gamemode-changed").replace("{gamemode}", "Spectator")));
 
@@ -43,16 +40,10 @@ public class GameMode extends BaseCommand {
 
     @Subcommand("adventure")
     @CommandCompletion("adventure")
+    @CommandPermission("gamemodes.use")
     public void adventure(Player player) {
-        checkperm(player);
         player.setGameMode(org.bukkit.GameMode.ADVENTURE);
         player.sendMessage(ChatUtils.colorize(plugin.getConfig().getString("messages.gamemode-changed").replace("{gamemode}", "Adventure")));
 
-    }
-
-    public void checkperm (Player player) {
-        if (!player.hasPermission("gamemodes.use"))
-            player.sendMessage(ChatUtils.colorize(plugin.getConfig().getString("messages.no-permission")));
-        return;
     }
 }
