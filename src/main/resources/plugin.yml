@@ -1,7 +1,0 @@
-name: GamemodeCommandSpigot
-version: 1.0
-main: ga.juriantech.gamemodecommandspigot.GamemodeCommandSpigot
-api-version: 1.18
-authors: [ Jurian ]
-description: A simple plugin who gives you a gamemode command.
-website: juriantech.ga

@@ -1,6 +1,0 @@
-options:
-
-messages:
-  specify-arguments: "&4 You need to specify an argument (creative/survival/spectator/adventure)!"
-  gamemode-changed: "&a Your gamemode changed to {gamemode}!"
-  no-permission: "&4 You lack the required permissions to run this command!"
