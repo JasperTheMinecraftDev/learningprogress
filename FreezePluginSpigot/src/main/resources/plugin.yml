@@ -1,0 +1,11 @@
+name: FreezePluginSpigot
+version: 1.0
+main: ga.juriantech.freezepluginspigot.FreezePluginSpigot
+api-version: 1.18
+authors: [ Jurian ]
+description: A plugin with advanced options to freeze a player!
+website: juriantech.ga
+commands:
+  freeze:
+    description: Allows you to freeze a player.
+    permission: freeze.use

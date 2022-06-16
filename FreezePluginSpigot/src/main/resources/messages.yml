@@ -1,0 +1,19 @@
+# All messages support colors!
+# Example: &4 (red), &e (green), you can find the color codes on many websites.
+messages:
+  freeze-activated-on-player: "&eSuccessfully frozen the specified player!"
+  player-frozen: "&4Oh no! Someone has used the magical freeze method on you!"
+  player-unfrozen: "&6Yes! You are now unfrozen!"
+  freeze-removed-from-player: "&bSuccessfully unfrozen and warmed up the specified player!"
+  player-already-frozen: "&6The specified player is already frozen."
+  player-not-frozen: "&4That player is not frozen yet!"
+  specify-arguments: "&4You have to specify some arguments!"
+  messagesfile-reloaded: "&bSuccessfully reloaded the messages file!"
+  bypassmode-enabled: "&6Successfully enabled the bypass mode!"
+  bypassmode-disabled: "&4Successfully disabled the bypass mode!"
+  immune-player: "&4You can't freeze this player, the player is immune!"
+
+# You need to run the /freeze getitems command again if you changed this.
+items:
+  ice: "&bfreezer"
+  flint_and_steel: "&4Unfreezer"
