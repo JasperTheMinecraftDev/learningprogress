@@ -23,7 +23,7 @@ public class Freeze extends BaseCommand {
     @CommandCompletion("@players")
     @CommandPermission("freeze.use")
 
-    public void oncommand(Player player, String[] args) {
+    public void onCommand(Player player, String[] args) {
 
         if (args.length == 1) {
             Player target = Bukkit.getPlayerExact(args[0]);
@@ -54,7 +54,7 @@ public class Freeze extends BaseCommand {
     @CommandCompletion("@players")
     @CommandPermission("freeze.use")
 
-    public void offcommand(Player player, String[] args) {
+    public void offCommand(Player player, String[] args) {
 
         if (args.length == 1) {
             Player target = Bukkit.getPlayerExact(args[0]);
@@ -78,7 +78,7 @@ public class Freeze extends BaseCommand {
     @Subcommand("getitems")
     @CommandPermission("freeze.use")
 
-    public void getitems(Player player) {
+    public void getItems(Player player) {
         ItemStack freezeitem = new ItemStack(Material.ICE, 1);
         ItemStack warmupitem = new ItemStack(Material.FLINT_AND_STEEL, 1);
         ItemMeta freezeitemmeta = freezeitem.getItemMeta();
@@ -106,7 +106,7 @@ public class Freeze extends BaseCommand {
     @Subcommand("togglebypass")
     @CommandPermission("freeze.togglebypass")
 
-    public void togglebypass(Player player) {
+    public void toggleBypass(Player player) {
         if (player instanceof Player) {
             if (!plugin.getDataFile().getBoolean(player.getUniqueId() + ".bypassmode-active")) {
                 plugin.getDataFile().set(player.getUniqueId() + ".bypassmode-active", true);
